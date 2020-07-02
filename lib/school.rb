@@ -29,6 +29,7 @@ class School
     @roster.each |grade, name|
       sorted_name<name.sort
     end
+    sorted_name
   end
 
 end
