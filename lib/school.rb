@@ -17,4 +17,13 @@ class School
     end
   end
 
+  def grade (grade)
+    @roster.each do|year|
+      if grade==year
+        return @roster[grade]
+      end
+      @roster[grade]
+    end
+  end 
+
 end
