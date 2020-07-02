@@ -18,12 +18,10 @@ class School
   end
 
   def grade (grade)
-    @roster.each do|year|
-      if grade==year
-        return @roster[grade]
-      end
-      @roster[grade]
+    if @roster.keys.include?(grade)
+      return @roster[grade]
     end
-  end 
+    @roster[grade]
+  end
 
 end
