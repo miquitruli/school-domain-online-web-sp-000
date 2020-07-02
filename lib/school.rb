@@ -25,10 +25,10 @@ class School
   end
 
   def sort
+    sorted_name=[]
     @roster.each |grade, name|
-      return name.sort!
+      sorted_name=name.sort!
     end
-    name.sort!
   end
 
 end
